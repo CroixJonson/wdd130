@@ -1,13 +1,48 @@
 body {
     background-color: lightblue;
 }
-
-a {
+#content {
+    max-width: 1200px;
+    background-color: lightcyan;
+}
+nav, footer {
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
     padding: 15px;
     color: black;
     font-size: 20px;
+    text-decoration: none;
+    margin: 5px;
+
+}
+nav a:hover {
+    background-color: navy;
+    color: whitesmoke;
+}
+h1 {
+    text-align: center;
 }
 
 img {
     width: 600px;
+    /*text-align: center;*/
+    display:block;
+    margin:0 auto;
+}
+p {
+    padding: 0 30px;
+    line-height: 2em;
+    width: 1150px;
+}
+#main-topic {
+    color:navy;
+}
+footer a {
+    color:steelblue
+}
+footer a:hover {
+    color: orange;
 }
