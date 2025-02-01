@@ -168,3 +168,15 @@ nav a:hover {
   max-width: 1600px;
   margin: 0 auto;
 }
+#hero-msg h1 {
+  text-align: center;
+}
+#hero-msg h4 {
+  text-align: center;
+}
+.button-box {
+  text-align: center;
+}
+main secion {
+  text-align: center;
+}
