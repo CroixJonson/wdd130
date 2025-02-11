@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+main img {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+#circle_images{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+#circle_images img { 
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    border: 5px solid darkgray;
+   
+}
+header img {
+    width: 100%;
+}
+main {
+    padding: 100px;
+    background-color: gray;
+    margin: 0;
+    
+}

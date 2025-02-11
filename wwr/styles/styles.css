@@ -1,7 +1,6 @@
 
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
+/* this is my personal file for the class not my own website
+*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 :root {
@@ -33,14 +32,15 @@ Fonts are separated by a & */
 body {
   max-width: 960px;
   margin: 0 auto;
-  padding: 4em;
+  padding: 0;
   font-size: 18px;
   text-align: center;
   background-color: white;
+  font-family: var(--paragraph-font);
 }
 img {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   max-width: 300px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   text-align: center;
+  margin: 0;
 }
 hr {
   height: 3px;
@@ -109,12 +110,13 @@ nav  {
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding:35px;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
   text-align: center;
   color: black;
+  margin: 0 ;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -188,16 +190,18 @@ main secion {
 .book {
     background-color: #34a0a4;
     text-decoration: none;
+    padding: 15px 30px;
 }
 .join {
     background-color: #34a0a4;
     text-decoration: none;
+    padding: 15px 30px;
 }
 .book:hover {
     background-color: #34a0a4;
 }
 .join:hover {
-    background-color: #34a0a4;
+    background-color: orange;
 }
 #background {
     background-color: #34a0a4;
@@ -205,18 +209,22 @@ main secion {
 .msg {
     background-color: #34a0a4;
     color: white;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #34a0a4;
 }
 .logo {
     width: 80px;
+    padding-top: 5px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
-    width: 80px
+    width: 800px
 }
 footer a {
     text-decoration: none;
@@ -227,4 +235,24 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+.home-title {
+  font-family: var(--heading-font);
+  font-size: 3em;
+}
+.book, .join {
+  background-color: #d9c2a3;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.card-img {
+  border: 10px solid #34a0a4; 
+}
+
+main section img {
+  box-sizing: border-box; 
 }
