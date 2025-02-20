@@ -23,17 +23,24 @@ nav, footer {
     padding: 20px;
     text-align: center;
 }
+nav {
+    display: flex;
+}
 nav a {
     padding: 15px;
     color: black;
     font-size: 20px;
     text-decoration: none;
     margin: 5px;
-
+    transition: .5s;
+    border-radius: 90%;
 }
 nav a:hover {
-    background-color: navy;
+    background-color: black;
     color: whitesmoke;
+    
+    opacity: .7;
+    transform: scale(1.1);
 }
 h1 {
     text-align: center;
@@ -45,8 +52,15 @@ img {
     display:block;
     margin:50px auto;
     border: 4px solid steelblue;
+    border-radius: 50%;
     padding: 10px;
     box-sizing: border-box;
+    transition: 1s;
+    box-shadow: 10px 5px 10px black;
+}
+img:hover {
+    opacity: .7;
+    transform: scale(1.05);
 }
 p {
     background-color: white;
