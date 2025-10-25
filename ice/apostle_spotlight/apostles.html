@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+       .first_presidency_card {
+       
+        background-image: url("images/christus.webp");
+       max-width: 80%;
+       max-height: 80%;
+       border-radius: 40px;
+       border: 10px solid black;    
+       
+        h1, h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 2.6em;
+        }
+       }
+        #box {
+            max-width: 1400px;
+            margin: 0 auto; /* centers the box */
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            align-items: flex-end;
+        }
+        #box img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: 50% 10%;
+        }
+     
+
+        #box h1 {
+            flex: 1 1 100%;
+        }
+
+        img {
+            border: 8px solid white;
+    
+        }
+       
+        #pnelly {
+            width: 200px !important;
+            height: 200px !important;
+        }
+
+        #quorum_section {
+            text-align: center;
+            margin-top: 2em;
+        }   
+
+        #quorum_box {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 2em;
+            justify-items: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: fit-content;
+            margin-bottom: 3em;
+        }
+        #quorum_box img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: 50% 10%;
+        }
+        #quorum_box img:hover {
+            border-color: blueviolet;
+        }
+
+        #box img:hover {
+            border-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+    <section class="first_presidency_card">  
+        <div id="box">
+            <h1>First Presidency</h1>
+            <img src="images/oaks.webp" alt="oaks">
+            <img id="pnelly" src="images/nelson.webp" alt="nelson">
+            <img src="images/eyring.webp" alt="eyring">
+        </div>
+        <div id="quorum_section">
+            <h2>Quorum of the Twelve Apostles</h2>
+        </div>
+            <div id="quorum_box">
+                
+                <img src="images/holland.webp" alt="holland">
+                <img src="images/uchtdorf.webp" alt="uchtdorf">
+                <img src="images/bednar.webp" alt="bednar">
+                <img src="images/cook.webp" alt="cook">
+                <img src="images/christofferson.webp" alt="christofferson">
+                <img src="images/anderson.webp" alt="anderson">
+                <img src="images/rasband.webp" alt="rasband">
+                <img src="images/stevenson.webp" alt="stevenson">
+                <img src="images/renlund.webp" alt="renlund">
+                <img src="images/gong.webp" alt="gong">
+                <img src="images/soares.webp" alt="soares">
+                <img src="images/kearon.webp" alt="kearon">
+
+            </div>
+
+
+    </section>
+</body>
+</html>

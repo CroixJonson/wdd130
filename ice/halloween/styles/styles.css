@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    border-bottom: 3px solid #69140E;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    position: relative; /* needed for pseudo-element positioning */
+    font-weight: bold;
+    color: #69140E;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+nav li:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Blood-dripping GIF on hover */
+nav li::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* adjust distance below text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;  /* size of your GIF */
+    height: 32px;
+    background: url('images/blood-dripping.gif') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none; /* ensures it doesn’t block clicks */
+}
+
+nav li:hover::after {
+    opacity: 1;
+}
+
+/* Main Section */
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: orange;
+    margin: 20px 0;
+    text-shadow: 
+        0 0 3px orange,
+        0 0 6px darkorange,
+        0 0 8px orangered;
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 3px orange,
+            0 0 6px darkorange,
+            0 0 8px orangered;
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+/* Main Image with Glow */
+main img {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+    box-shadow: 0 0 20px 5px #69140E; 
+    border-radius: 10px; /* optional: rounded corners */
+}
+
+/* Sections */
+section {
+    background-color: #1a1a1a;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #dcdcdc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: #1a1a1a;
+    border-top: 3px solid orange;
+    color: #f5f5f5;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
