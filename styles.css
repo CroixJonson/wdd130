@@ -1,0 +1,163 @@
+/* Nav background #396E94 
+Footer color #2A3C24
+Hover color #4F9D69 
+Link color#D1D1D1 
+p background #2f5f3f
+background white */
+
+/* nav/ header area  */
+html {
+    max-width: 1400px;
+}
+#navbox {
+   
+    background-color: #396E94;
+}
+#navbox nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#navbox img {
+    margin-right: 40px;
+}
+
+#navbox ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 40%;
+}
+#navbox ul li{
+    padding: 1em;
+}
+#navbox ul a {
+    margin: 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #d1d1d1;
+}
+#navbox li:hover, li a:hover {
+    background-color: #4F9D69;
+    color: #396E94;
+}
+
+/* Upper box section */
+#upperbox {
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+}
+#upperbox img {
+    border-radius: 1em;
+    margin-top: 50px;
+    float: left;
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+#upperbox_p {
+    width: 500px;
+    height: 400px; 
+    margin-left: 100px;
+    margin-top: 50px;
+    border: #396E94 3px solid;
+    border-radius: 1em;
+    padding: 4px;
+    background-color: #d1d1d1;
+}
+#upperbox_p p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Middle section paragraph box */
+#middle {
+    background-color: #2f5f3f;
+    color: #d1d1d1;
+    font-size: 2em;
+    padding: 1em;
+    margin-top: 50px;
+    border-radius: 1em;
+}
+
+/* Lower box Section */
+
+#lowerbox {
+    display: flex;
+    max-width: 1400px;
+    margin-top: 50px;
+    
+}
+
+#bottomimage {
+    width: 500px;
+    height: 400px;
+    margin-right: 90px;
+    
+}
+
+#bottomimage img{
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#contact {
+    height: 300px;
+}
+
+#contact h2 {
+    text-decoration: underline;
+    margin: 0;
+}
+
+#contact form {
+    background-color: #d1d1d1;
+    height: 340px;
+    border-radius: 1em;
+    padding: 1em;
+    justify-content: center;
+}
+#name, #email, #message {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+#contact form button {
+    display: flex;
+}
+
+/* FOoter section */
+
+footer {
+    background-color: #396E94;
+    margin-top: 50px;
+}
+
+table {
+    color: #d1d1d1;
+    height: 200px;
+    padding-left: 1em;
+}
+table th {
+    color: black;
+    font-size: 1.75em;
+}
+table a {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+table a:hover {
+    color: #4F9D69;
+    text-decoration: underline;
+}
+table tr td {
+    font-size: 1.5em;
+}
+td a {
+    font-size: 18px;
+}
