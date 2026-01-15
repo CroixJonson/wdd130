@@ -45,9 +45,10 @@ nav a {
     margin-left: auto;
 }
 
-nav a:hover{
+nav a:hover {
     color: tan;
 }
+
 /* ----------- MAIN ----------- */
 main {
     max-width: 100%;
@@ -55,10 +56,16 @@ main {
     padding: 2rem;
     background-color: #003249;
     color: white;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
+
+p {
+    font-size: 1.1rem;
+}
+
 figcaption {
     text-decoration: underline;
+    font-size: 0.9rem;
 }
 
 /* ----------- PHOTO ABOUT ----------- */
@@ -67,7 +74,6 @@ figcaption {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-bottom: 4rem;
-    
 }
 
 #bigphoto {
@@ -78,15 +84,16 @@ figcaption {
     box-shadow: 0 4px 15px black;
 }
 
-h2 {
-    grid-column: 2/2;
-    grid-row: 1/2;
+#photo-about h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     background-color: gray;
     color: black;
     padding: 1em;
     border: 3px solid black;
-    text-decoration: none;
     box-shadow: 0 4px 15px black;
+    font-size: 2rem;
+    font-size: clamp(1.1rem, 4vw, 2rem);
 }
 
 /* ----------- IMAGE GRID ----------- */
@@ -120,7 +127,6 @@ footer {
     padding: 2rem;
 }
 
-
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,25 +156,24 @@ footer {
     #photo-about {
         grid-template-columns: 1fr;
     }
+  
+    #photo-about h2 {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: center;
+    }
 
     #imagegrid {
         grid-template-columns: repeat(2, 1fr);
     }
-    h2 {
-        font-size: 1.5rem;
-        padding: 0.75em;
-        grid-column: auto;
-        grid-row: auto;
-        text-align: center;
-    }
 }
 
 @media (max-width: 480px) {
+    #photo-about h2 {
+        font-size: 1.2rem;
+    }
+
     #imagegrid {
         grid-template-columns: 1fr;
-    }
-    h2 {
-        font-size: 1.2rem;
-        padding: 0.5em;
     }
 }
