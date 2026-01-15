@@ -28,6 +28,7 @@
     border: 1px solid #ccc;
     padding: 2rem;
     background-color: #fff;
+    box-shadow: 0 4px 15px black;
 }
 
 .service-card h2 {
