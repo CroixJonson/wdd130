@@ -1,0 +1,59 @@
+/* ----------- SERVICES HERO ----------- */
+#services-hero {
+    max-width: 800px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+#services-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#services-hero p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ----------- SERVICES LIST ----------- */
+#services-list {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.service-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007EA7;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 600px) {
+    #services-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
