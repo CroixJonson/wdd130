@@ -154,10 +154,21 @@ footer {
     #imagegrid {
         grid-template-columns: repeat(2, 1fr);
     }
+    h2 {
+        font-size: 1.5rem;
+        padding: 0.75em;
+        grid-column: auto;
+        grid-row: auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     #imagegrid {
         grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 1.2rem;
+        padding: 0.5em;
     }
 }
